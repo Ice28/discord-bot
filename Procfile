@@ -1,0 +1,1 @@
+worker: JavaScrpit index.js
