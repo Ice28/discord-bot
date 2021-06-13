@@ -1,3 +1,5 @@
+import os
+
 const { time } = require('console');
 const Discord = require('discord.js');
 const { Server } = require('http');
@@ -67,4 +69,5 @@ client.on("message", (msg) => {
 	}
 });
 
-client.login('ODUzNTM2ODU0ODEyMjYyNDEw.YMW0JA.0shfWe_7C5ST-3muUouqnSfNeHg');
+access_token = os.environ["BOT_TOKEN"]
+client.login(access_token);
